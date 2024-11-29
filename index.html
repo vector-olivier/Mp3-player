@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <div class="background"></div>
+    <canvas id="visualizer"></canvas>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play-pause">▶️</button>
+      <button id="next">⏭</button>
+    </div>
+    <input type="file" id="file-input" accept="audio/*" />
+    <p id="current-track">No track selected</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
