@@ -20,6 +20,9 @@ fileInput.addEventListener('change', (event) => {
 });
 
 playPauseButton.addEventListener('click', () => {
+  if (audioContext.state === 'suspended') {
+    audioContext.resume(); // Mengaktifkan audio context
+  }
   if (audio.paused) {
     audio.play();
     playPauseButton.textContent = '⏸️';
