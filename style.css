@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  overflow: hidden;
+}
+
+.player {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff7eb3, #ffa07a);
+  filter: blur(20px);
+  z-index: -1;
+}
+
+#visualizer {
+  width: 100%;
+  height: 300px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2em;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#file-input {
+  margin: 10px 0;
+}
